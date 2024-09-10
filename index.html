@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+    <title>Aventuras nas Estrelas e Profundezas</title>
+</head>
+<body>
+    <main>
+        <!-- Primeiro Passo: Explorador e Escolha entre Foguete e Submarino -->
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="Imagem do Aventureiro">
+            <p>Você é um explorador audacioso, sempre em busca de novas aventuras e descobertas. Recentemente, encontrou dois veículos prontos para a ação: um foguete espacial e um submarino avançado. Qual caminho escolherá?</p>
+            <button class="btn-proximo" data-proximo="1">Escolher o Foguete Espacial</button>
+            <button class="btn-proximo" data-proximo="2">Escolher o Submarino</button>
+        </div>
+
+        <!-- Escolha de portas na nave espacial -->
+        <div class="passo" id="passo-1">
+            <img src="img/cenario-passo1.png" alt="Escolha de portas na nave espacial">
+            <p>Você opta por explorar o espaço, acreditando que pode encontrar novos mundos e tecnologias. O foguete decola com sucesso, e você se aproxima de um planeta distante. Ao chegar, você se depara com uma antiga nave abandonada e duas portas: uma à esquerda e uma à direita.</p>
+            <button class="btn-proximo" data-proximo="3">Escolher a Porta da Esquerda</button>
+            <button class="btn-proximo" data-proximo="4">Escolher a Porta da Direita</button>
+        </div>
+
+        <!-- Escolha de portas na caverna submersa -->
+        <div class="passo" id="passo-2">
+            <img src="img/cenario-passo2.png" alt="Escolha de portas na caverna submersa">
+            <p>Você decide explorar as profundezas do oceano com o submarino avançado. Ao mergulhar, você encontra uma caverna submersa com duas portas misteriosas: uma à esquerda e uma à direita.</p>
+            <button class="btn-proximo" data-proximo="5">Escolher a Porta da Esquerda</button>
+            <button class="btn-proximo" data-proximo="6">Escolher a Porta da Direita</button>
+        </div>
+
+        <!-- Alienígena hostil -->
+        <div class="passo" id="passo-3">
+            <img src="img/cenario-passo3.png" alt="Imagem do Alienígena Hostil">
+            <p>Ao abrir a porta da esquerda, você se depara com um alienígena hostil. Sem tempo para reagir, ele o ataca. Você é derrotado e sua aventura no espaço termina.</p>
+        </div>
+
+        <!-- Tesouro submarino -->
+        <div class="passo" id="passo-5">
+            <img src="img/cenario-passo5.png" alt="Imagem do Tesouro Submarino">
+            <p>A porta da esquerda leva você a uma sala repleta de tesouros de civilizações perdidas. Você coleta as riquezas e retorna à superfície como um dos maiores exploradores do mundo.</p>
+            <button class="btn-proximo" data-proximo="7">Retornar à Superfície</button>
+        </div>
+
+        <!-- Laboratório alienígena -->
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4.png" alt="Laboratório Alienígena">
+            <p>A porta da direita revela um laboratório alienígena cheio de tecnologia avançada. Você encontra artefatos incríveis e retorna à Terra como um herói, trazendo descobertas que mudarão o mundo.</p>
+        </div>
+
+        <!-- Monstro marinho gigante -->
+        <div class="passo" id="passo-6">
+            <img src="img/cenario-passo6.png" alt="Monstro Marinho Gigante">
+            <p>Ao abrir a porta da direita, você encontra um monstro marinho gigante. Ele ataca seu submarino, que é danificado e afunda rapidamente.</p>
+            <button class="btn-proximo" data-proximo="8">Tentar consertar o submarino</button>
+        </div>
+
+        <!-- Passos adicionais não mencionados -->
+        <div class="passo" id="passo-7">
+            <p>Com o submarino intacto e os tesouros em mãos, você retorna à superfície. Seu nome entra para a história como o maior explorador submarino de todos os tempos.</p>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>Você tenta consertar o submarino, mas o dano é irreparável. O monstro marinho volta para dar o golpe final e a sua aventura chega ao fim.</p>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>Explorando mais a fundo o planeta alienígena, você encontra uma cidade perdida cheia de tecnologia avançada. Seu nome se torna lendário entre exploradores espaciais.</p>
+            <button class="btn-proximo" data-proximo="11">Explorar mais a cidade</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>Você decide seguir outro caminho no planeta e acaba encontrando uma civilização alienígena amigável que compartilha segredos antigos com você.</p>
+            <button class="btn-proximo" data-proximo="12">Retornar à Terra com o conhecimento alienígena</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <p>Dentro da cidade alienígena, você descobre segredos que revolucionam a ciência. Sua jornada no espaço se torna uma das mais notáveis da história da humanidade.</p>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <p>Com o conhecimento alienígena em mãos, você retorna à Terra e compartilha descobertas que mudam o curso da história. Sua aventura no espaço é eternizada.</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
